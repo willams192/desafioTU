@@ -29,8 +29,7 @@ def test_validar_cnpj_invalido(validador, cnpj):
     assert validador.validar_cnpj(cnpj) is False
 
 
-@pytest.mark.parametrize(
-    "cnpj", [11111111111111, 12345678901234, None, True, ["11222333000181"]])
+@pytest.mark.parametrize("cnpj", [11111111111111, 12345678901234, None, True, ["11222333000181"]])
 def test_validar_cnpj_nao_texto(validador, cnpj):
     with pytest.raises(ValueError):
         validador.validar_cnpj(cnpj)
