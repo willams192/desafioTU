@@ -36,3 +36,19 @@ class Validador:
             soma = sum(int(d) * p for d, p in zip(base, pesos))
             resto = soma % 11
             return '0' if resto < 2 else str(11 - resto)
+
+    def validar_cep(self, cep):
+        if not isinstance(cep, str):
+            raise ValueError("O CEP deve ser um texto")
+
+        if len(cep) == 8:
+            return cep.isdigit()
+
+        if len(cep) == 9:
+            return (
+                    cep[:5].isdigit()
+                    and cep[5] == "-"
+                    and cep[6:].isdigit()
+            )
+
+        return False
