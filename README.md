@@ -78,3 +78,7 @@ Na pasta raiz do projeto, execute:
 ```bash
 pytest
 ```
+ou 
+```bash
+python -m pytest
+```
