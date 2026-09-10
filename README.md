@@ -14,11 +14,18 @@ Os testes estão localizados em `test/test_validador.py` e utilizam `pytest.fixt
 
 ```text
 desafioTU/
-├── validador.py
-├── README.md
+│
+├── .github/
+│   └── workflows/
+│       └── tests.yml
+│
 ├── test/
 │   └── test_validador.py
-└── .venv/
+│
+├── validador.py
+├── servico_correios.py
+├── requirements.txt
+└── README.md
 ```
 
 > A pasta `.venv` é o ambiente virtual do Python. Ela não é necessária para versionar o projeto; pode ser recriada seguindo os passos abaixo.
@@ -63,6 +70,7 @@ Após a ativação, o terminal normalmente exibirá `(.venv)` no início da linh
 
 ```bash
 python -m pip install pytest pytest-cov```
+```
 
 Para verificar a instalação:
 
