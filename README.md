@@ -62,8 +62,7 @@ Após a ativação, o terminal normalmente exibirá `(.venv)` no início da linh
 ## 3. Instalar o pytest
 
 ```bash
-python -m pip install pytest
-```
+python -m pip install pytest pytest-cov```
 
 Para verificar a instalação:
 
